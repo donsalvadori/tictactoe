@@ -1,4 +1,4 @@
-require 'console_input'
+require 'IO/console_input'
 
 module Tictac
   class UI

@@ -1,6 +1,5 @@
-require 'version'
-require 'min_max'
-require 'human'
+require 'players/min_max'
+require 'players/human'
 require 'board'
 require 'ui'
 require 'colorize'
