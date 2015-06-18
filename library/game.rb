@@ -1,7 +1,7 @@
-require 'players/min_max'
-require 'players/human'
-require 'board'
-require 'ui'
+require 'tictac/players/min_max'
+require 'tictac/players/human'
+require 'tictac/board'
+require 'tictac/ui'
 require 'colorize'
 
 module Tictac

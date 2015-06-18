@@ -1,5 +1,5 @@
-require 'player'
-require 'ui'
+require 'tictac/player'
+require 'tictac/ui'
 
 module Tictac
   module Players

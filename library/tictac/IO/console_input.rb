@@ -1,4 +1,4 @@
-require 'colorize'
+require_relative 'colorize'
 
 module Tictac
   module IO

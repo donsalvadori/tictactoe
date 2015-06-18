@@ -1,5 +1,5 @@
-require 'player'
-require 'board'
+require 'tictac/player'
+require 'tictac/board'
 
 module Tictac
   module Players
