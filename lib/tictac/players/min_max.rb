@@ -18,13 +18,15 @@ module Tictac
 
       def minmax(board, current_player)
         return score board if game_over? board
+
         scores = {}
 
         board.available_spaces.each do |space|
+          # Copy board so we don't mess up original
           potential_board = board.dup
           potential_board.place_piece space, current_player
 
-          scores[space] = minmax( potential_board, switch(current_player))
+          scores[space] = minmax(potential_board, switch(current_player))
         end
 
         @best_choice, best_score = best_move current_player, scores
@@ -35,11 +37,11 @@ module Tictac
         board.winner || board.tie?
       end
 
-      def best_move(pieces, scores)
+      def best_move(piece, scores)
         if piece == @piece
-          scores.max_by {|k,v| v}
+          scores.max_by { |k,v| v }
         else
-          scores.min_by {|k,v| v}
+          scores.min_by { |k,v| v }
         end
       end
 
