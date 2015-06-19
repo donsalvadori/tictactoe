@@ -1,4 +1,4 @@
-require 'IO/console_input'
+require 'tictac/io/console_input'
 
 module Tictac
   class UI
@@ -13,8 +13,8 @@ module Tictac
       delegate.banner
     end
 
-    def usage
-      delegate.usage
+    def explanation
+      delegate.explanation
     end
 
     def turn(player)

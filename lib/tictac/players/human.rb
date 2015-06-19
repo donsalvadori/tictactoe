@@ -3,7 +3,7 @@ require 'tictac/ui'
 
 module Tictac
   module Players
-    class Human < Tictac::Players
+    class Human < Tictac::Player
     
       def move(board)
         valid = false

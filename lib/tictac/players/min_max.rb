@@ -5,7 +5,7 @@ module Tictac
   module Players
     class MinMax < Tictac::Player
 
-      def initialize(piece ui)
+      def initialize(piece, ui)
         super piece, ui
         @opponent = switch piece
       end
@@ -37,7 +37,7 @@ module Tictac
 
       def best_move(pieces, scores)
         if piece == @piece
-          score.max_by {|k,v| v}
+          scores.max_by {|k,v| v}
         else
           scores.min_by {|k,v| v}
         end
@@ -58,4 +58,3 @@ module Tictac
     end
   end
 end
-      end

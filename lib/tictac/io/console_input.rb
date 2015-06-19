@@ -1,4 +1,4 @@
-require_relative 'colorize'
+require 'colorize'
 
 module Tictac
   module IO
@@ -28,9 +28,9 @@ module Tictac
 
       def display_board(board)
         output = "\n"
-        0.upto(8) do |p|
-          output << color(board, p)
-          case p % 3
+        0.upto(8) do |position|
+          output << color(board, position)
+          case position % 3
           when 0,1 then output << "|"
           when 2 then output << "\n------------\n" unless position == 8
           end
@@ -51,6 +51,10 @@ module Tictac
         yield if block_given?
         puts "\nThanks for playing!".green
         abort
+      end
+
+      def get_move
+        move = gets
       end
 
       private

@@ -18,7 +18,7 @@ module Tictac
 
     def play
       ui.banner
-      ui.usage
+      ui.explanation
 
       ui.display_board board
 
