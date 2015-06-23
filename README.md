@@ -1,5 +1,5 @@
 # tictactoe
-ruby version of tictactoe in command line
+ruby version of an unbeatable game of tictactoe in command line
 
 
 
