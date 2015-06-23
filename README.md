@@ -13,3 +13,7 @@ Then build and install the gem:
 
 $ rake install
 
+After, simply run in your terminal $ tictac 
+
+Enjoy losing to a perfect player :-)
+
