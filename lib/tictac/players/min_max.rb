@@ -22,7 +22,7 @@ module Tictac
         scores = {}
 
         board.available_spaces.each do |space|
-          # Copy board so we don't mess up original
+          
           potential_board = board.dup
           potential_board.place_piece space, current_player
 
