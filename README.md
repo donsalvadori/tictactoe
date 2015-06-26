@@ -1,5 +1,5 @@
 # tictactoe
-ruby version of tictactoe in command line
+ruby version of an unbeatable game of tictactoe in command line
 
 
 
@@ -12,4 +12,8 @@ $ bundle install
 Then build and install the gem:
 
 $ rake install
+
+After, simply run in your terminal $ tictac 
+
+Enjoy losing to a perfect player :-)
 
